@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="21dp"
+    app:cardBackgroundColor="#8B5B01"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_expand_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_expand_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_expand_more"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/txt_title_notes"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_expand_more"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck"
+            tools:text="هزینه های منزل" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_date_for_add_notes"
+            app:layout_constraintEnd_toEndOf="@+id/txt_title_notes"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_notes"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_notes" />
+
+        <TextView
+            android:id="@+id/txt_detail_notes"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:gravity="start"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_notes"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            tools:text="هزینه های منزل" />
+
+        <TextView
+            android:id="@+id/txt_date_notes"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detail_notes"
+            tools:ignore="TextSizeCheck"
+            tools:text="2050/05/09 | 12:58" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_share_notes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/img_delete_notes"
+            app:layout_constraintEnd_toStartOf="@+id/img_delete_notes"
+            app:layout_constraintTop_toTopOf="@+id/img_delete_notes"
+            app:srcCompat="@drawable/ic_share"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_delete_notes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detail_notes"
+            app:srcCompat="@drawable/ic_delete"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_pin_notes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="24dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/img_share_notes"
+            app:layout_constraintEnd_toStartOf="@+id/img_share_notes"
+            app:layout_constraintTop_toTopOf="@+id/img_share_notes"
+            app:srcCompat="@drawable/ic_pin"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_unPin_notes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_share_notes"
+            app:layout_constraintEnd_toStartOf="@+id/img_share_notes"
+            app:layout_constraintTop_toTopOf="@+id/img_share_notes"
+            app:srcCompat="@drawable/ic_unpin"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

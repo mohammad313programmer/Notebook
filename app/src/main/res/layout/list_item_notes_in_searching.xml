@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="21dp"
+    app:cardBackgroundColor="@color/teal_700"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_title_notes"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck"
+            tools:text="هزینه های منزل" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_date_for_add_notes"
+            app:layout_constraintEnd_toEndOf="@+id/txt_title_notes"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_notes"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_notes" />
+
+        <TextView
+            android:id="@+id/txt_detail_notes"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/txt_title_notes"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            tools:ignore="TextSizeCheck"
+            tools:text="هزینه های منزل" />
+
+        <TextView
+            android:id="@+id/txt_date_notes"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="100dp"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_detail_notes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detail_notes"
+            tools:ignore="TextSizeCheck"
+            tools:text="2050/05/09 | 12:58" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_share_notes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/img_delete_notes"
+            app:layout_constraintEnd_toStartOf="@+id/img_delete_notes"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_date_notes"
+            app:layout_constraintTop_toTopOf="@+id/img_delete_notes"
+            app:srcCompat="@drawable/ic_share"
+            app:tint="@color/Ferozeh200" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_delete_notes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detail_notes"
+            app:srcCompat="@drawable/ic_delete"
+            app:tint="#d1495b"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

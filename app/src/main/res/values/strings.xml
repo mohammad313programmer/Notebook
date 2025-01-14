@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="add">add</string>
+    <string name="title">Title</string>
+    <string name="detail">Detail</string>
+    <string name="archive">بایگانی</string>
+    <string name="todo">TODO</string>
+    <string name="delete">حذف</string>
+    <string name="back">لغو</string>
+    <string name="help">جستجو بر اساس عنوان هایی که ذخیره کرده اید انجام میشود.</string>
+</resources>
